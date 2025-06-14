@@ -79,12 +79,12 @@ You can run the server directly without installation using `npx`:
 
 **Tokenless Mode:**
 ```bash
-npx -y shopify-storefront-mcp-server --storeDomain your-store.myshopify.com
+npx -y @wolfielabs/shopify-storefront-mcp-server --storeDomain your-store.myshopify.com
 ```
 
 **Authenticated Mode:**
 ```bash
-npx -y shopify-storefront-mcp-server --storeDomain your-store.myshopify.com --storefrontAccessToken your_storefront_access_token
+npx -y @wolfielabs/shopify-storefront-mcp-server --storeDomain your-store.myshopify.com --storefrontAccessToken your_storefront_access_token
 ```
 
 ### Local Development
@@ -136,10 +136,9 @@ Add this configuration to your Claude Desktop config file:
 {
   "mcpServers": {
     "shopify-storefront": {
-      "command": "npx",
-      "args": [
+      "command": "npx",      "args": [
         "-y",
-        "shopify-storefront-mcp-server",
+        "@wolfielabs/shopify-storefront-mcp-server",
         "--storeDomain", 
         "your-store.myshopify.com"
       ]
@@ -153,10 +152,9 @@ Add this configuration to your Claude Desktop config file:
 {
   "mcpServers": {
     "shopify-storefront": {
-      "command": "npx",
-      "args": [
+      "command": "npx",      "args": [
         "-y",
-        "shopify-storefront-mcp-server",
+        "@wolfielabs/shopify-storefront-mcp-server",
         "--storeDomain", 
         "your-store.myshopify.com",
         "--storefrontAccessToken",
