@@ -73,6 +73,20 @@ SHOPIFY_STORE_DOMAIN=your-store.myshopify.com
 
 ## Installation
 
+### Quick Start with npx (Recommended)
+
+You can run the server directly without installation using `npx`:
+
+**Tokenless Mode:**
+```bash
+npx -y shopify-storefront-mcp-server --storeDomain your-store.myshopify.com
+```
+
+**Authenticated Mode:**
+```bash
+npx -y shopify-storefront-mcp-server --storeDomain your-store.myshopify.com --storefrontAccessToken your_storefront_access_token
+```
+
 ### Local Development
 
 1. Clone or download this repository
@@ -114,6 +128,46 @@ Add this configuration to your Claude Desktop config file:
 - **Windows**: `%APPDATA%/Claude/claude_desktop_config.json`
 
 **Configuration:**
+
+**Using npx (Recommended):**
+
+**Tokenless Mode:**
+```json
+{
+  "mcpServers": {
+    "shopify-storefront": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "shopify-storefront-mcp-server",
+        "--storeDomain", 
+        "your-store.myshopify.com"
+      ]
+    }
+  }
+}
+```
+
+**Authenticated Mode:**
+```json
+{
+  "mcpServers": {
+    "shopify-storefront": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "shopify-storefront-mcp-server",
+        "--storeDomain", 
+        "your-store.myshopify.com",
+        "--storefrontAccessToken",
+        "your_storefront_access_token"
+      ]
+    }
+  }
+}
+```
+
+**Using Local Installation:**
 
 **Tokenless Mode:**
 ```json
