@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "shopify-storefront": {
+      "command": "node",
+      "args": [
+        "C:\\Users\\YourUsername\\path\\to\\shopify-storefront-mcp-server\\dist\\index.js",
+        "--storefrontAccessToken", "YOUR_STOREFRONT_ACCESS_TOKEN",
+        "--storeDomain", "your-store.myshopify.com"
+      ]
+    }
+  }
+}

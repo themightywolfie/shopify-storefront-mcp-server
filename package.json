@@ -1,0 +1,47 @@
+{  "name": "shopify-storefront-mcp-server",
+  "version": "1.1.0",
+  "description": "MCP Server for Shopify Storefront API - supporting both authenticated and tokenless access to customer-facing store data through GraphQL",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "shopify-storefront-mcp": "dist/index.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node dist/index.js",
+    "setup": "node quick-start.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "shopify",
+    "storefront",
+    "graphql",
+    "claude",
+    "model-context-protocol",
+    "ai",
+    "automation"
+  ],
+  "author": "Shopify Storefront MCP Server Contributors",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "graphql-request": "^6.1.0",
+    "minimist": "^1.2.8",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/minimist": "^1.2.5",
+    "@types/node": "^20.0.0",
+    "typescript": "^5.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
